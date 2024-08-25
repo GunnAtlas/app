@@ -1,4 +1,8 @@
+html {
+    font-family: arial;
+}
+
 h1 {
-    color: red;
-    background-color: gray;
+    text-align: center;
+    font-size: 10vw;
 }
