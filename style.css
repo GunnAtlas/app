@@ -2,6 +2,7 @@ html, body {
     width: 100%;
     height: 100%;
     margin: 0;
+    background-color: #333333;
  }
 
 h1 {
@@ -16,5 +17,20 @@ h1 {
     width: 100vw;
     height: 7vh;
     left: 0;
-    border-radius: 0 0 70px 70px;
+    border-radius: 0 0 50px 50px;
+}
+
+.bottomBar {
+    position: absolute;
+    bottom: 0;
+    background-color: #212121;
+    width: 100vw;
+    height: 15vh;
+    left: 0;
+    border-radius: 50px 50px 0 0;
+    transition: height 250ms;
+}
+
+.bottomBar:hover {
+    height: 40vw
 }
