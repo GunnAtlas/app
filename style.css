@@ -1,8 +1,19 @@
 html {
     font-family: arial;
+    background-color: #333333;
 }
 
 h1 {
     text-align: center;
     font-size: 10vw;
+}
+
+.topBar {
+    position: absolute;
+    top: 0;
+    background-color: #212121;
+    width: 100vw;
+    height: 7vh;
+    left: 0;
+    border-radius: 0 0 70px 70px;
 }
