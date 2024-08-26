@@ -3,6 +3,8 @@ html, body {
     height: 100%;
     margin: 0;
     background-color: #333333;
+    color: #fff;
+    font-size: 20vw;
  }
 
 h1 {
