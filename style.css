@@ -45,6 +45,7 @@ h1 {
     margin-left: 2.5vw;
     width: 20vw;
     height: 20vw;
+    transition: filter 250ms;
 }
 
 .selected {
