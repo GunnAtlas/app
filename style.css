@@ -29,8 +29,15 @@ h1 {
     left: 0;
     border-radius: 50px 50px 0 0;
     transition: height 250ms;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
 }
 
-.bottomBar:hover {
-    height: 40vw
+.icon {
+    display: flex;
+    width: 25%;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
 }
