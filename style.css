@@ -40,12 +40,12 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    filter: brightness(0%) invert();
+    filter: brightness(500%);
     margin-right: 2.5vw;
     margin-left: 2.5vw;
     width: 20vw;
     height: 20vw;
-    transition: filter 500ms;
+    transition: filter 250ms;
 }
 
 .selected {
