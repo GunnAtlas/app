@@ -20,7 +20,12 @@ function checkMobile() {
         event.preventDefault();
         document.querySelector(".main").setAttribute("style", "opacity: 0")
         document.querySelector(".alert").removeAttribute("hidden")
-        // alert("ISNTALL")
+        document.querySelector(".alert button").onclick = function() {
+            document.querySelector(".alert").setAttribute("style", "opacity: 0")
+            setTimeout(() => {
+                document.querySelector(".main").setAttribute("style", "opacity: 100; transition: opacity 250ms")
+            }, 750);
+        }
     })
 // } else {
     // document.body.innerHTML = "This application is not available on desktop yet."
