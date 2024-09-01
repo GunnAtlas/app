@@ -1,7 +1,7 @@
 let icons = document.querySelectorAll(".icon")
 
 for (let i = 0; i < icons.length; i++) {
-    icons[i].onclick = function() {
+    icons[i].ontouchstart = function() {
         if(!icons[i].classList.contains("selected")) {
             for (let o = 0; o < icons.length; o++) {
                 icons[o].classList.remove("selected")
@@ -20,7 +20,7 @@ function checkMobile() {
         event.preventDefault();
         document.querySelector(".main").setAttribute("style", "opacity: 0")
         document.querySelector(".alert").removeAttribute("hidden")
-        document.querySelector(".alert button").onclick = function() {
+        document.querySelector(".alert button").ontouchstart = function() {
             document.querySelector(".alert").setAttribute("style", "opacity: 0")
             setTimeout(() => {
                 document.querySelector(".main").setAttribute("style", "opacity: 100; transition: opacity 250ms")
