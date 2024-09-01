@@ -24,7 +24,7 @@ for (let i = 0; i < icons.length; i++) {
             }
             let pages = document.querySelectorAll(".page")
             for (let o = 0; o < pages.length; o++) {
-                let left = Number(pages[o].getAttribute("style").replace("vw;", "").replace("left: ", "")) +
+                let left = Number(pages[o].getAttribute("style").replace("vw;", "").replace("left: ", "")) -
                     (order[icons[i].id] - order[oldIcon]) * 100
                 pages[o].setAttribute("style", "left: " + left.toString() + "vw;")
             }
