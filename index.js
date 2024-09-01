@@ -27,7 +27,7 @@ function iOS() {
     // iPad on iOS 13 detection
     || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
 }
-
+document.querySelector(".topBar").innerHTML = iOS() + " " + navigator.userAgentData.platform
 if (iOS()) {
     const iOSIsInstalled = window.navigator.standalone === true;
     document.querySelector(".topBar").innerHTML = "HELLOWEGHOPHRWEKWHOIJHWEOIJHWROIJRWEOIJOHWIR)R(HW"
