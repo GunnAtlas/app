@@ -30,7 +30,7 @@ p {
     bottom: 0;
     background-color: #212121;
     width: 100vw;
-    height: 10vh;
+    height: 12vh;
     left: 0;
     border-radius: 50px 50px 0 0;
     transition: height 250ms;
@@ -44,10 +44,10 @@ p {
     justify-content: center;
     align-items: center;
     filter: brightness(500%);
-    margin-right: 5vw;
-    margin-left: 5vw;
-    width: 15vw;
-    height: 15vw;
+    margin-right: 3.5vw;
+    margin-left: 3.5vw;
+    width: 18vw;
+    height: 18vw;
     transition: filter 250ms;
 }
 
