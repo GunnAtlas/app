@@ -1,14 +1,34 @@
 let icons = document.querySelectorAll(".icon")
 let keyMembers = document.querySelectorAll(".keyMember")
 let touchTime
+let oldIcon = "map"
+let order = {
+    "map": 1,
+    "friends": 2,
+    "schedule": 3,
+    "clubs": 4
+}
 
 for (let i = 0; i < icons.length; i++) {
     icons[i].ontouchstart = function() {
         if(!icons[i].classList.contains("selected")) {
             for (let o = 0; o < icons.length; o++) {
                 icons[o].classList.remove("selected")
+                if (icons[o].id == "map") {
+                    document.querySelector(".topBar").setAttribute("style", "top: -7vh;")
+                }
             }
             icons[i].classList.add("selected")
+            if (icons[i].id == "map") {
+                document.querySelector(".topBar").setAttribute("style", "top: 0;")
+            }
+            let pages = document.querySelectorAll(".page")
+            for (let o = 0; o < pages.length; o++) {
+                let left = Number(pages[o].getAttribute("style").replace("vw;", "").replace("left: ", "")) +
+                    (order[icons[i].id] - order[oldIcon]) * 100
+                pages[o].setAttribute("style", "left: " + left.toString() + "vw;")
+            }
+            oldIcon = icons[i].id
         }
     }
 }
@@ -34,7 +54,7 @@ function checkMobile() {
     return check;
 }
 
-function alert(event) {
+function alertPopUp(event) {
     if (event) {
         event.preventDefault();
     }
@@ -52,7 +72,7 @@ function alert(event) {
     if (/iPhone/.test(navigator.userAgent)) {
         const iOSIsInstalled = window.navigator.standalone === true;
         if (!iOSIsInstalled) {
-            alert()
+            alertPopUp()
         }
     } else {
         window.addEventListener("beforeinstallprompt", (event) => {
@@ -72,7 +92,7 @@ function alert(event) {
                 <img src="assets/images/tutorial3.png" style="border-radius: 25px" width="533vw", height="300vh" />
                 <button>Ok</button>
             `
-            alert(event)
+            alertPopUp(event)
         })
     }
 // } else {
