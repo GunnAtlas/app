@@ -30,7 +30,7 @@ function iOS() {
 
 if (iOS()) {
     const iOSIsInstalled = window.navigator.standalone === true;
-    alert("hi")
+    document.querySelector(".topBar").innerHTML = "HELLOWEGHOPHRWEKWHOIJHWEOIJHWROIJRWEOIJOHWIR)R(HW"
     if (!iOSIsInstalled) {
         document.querySelector(".main").setAttribute("style", "opacity: 0")
         document.querySelector(".alert").removeAttribute("hidden")
@@ -49,7 +49,6 @@ if (iOS()) {
         document.querySelector(".main").setAttribute("style", "opacity: 0")
         document.querySelector(".alert").removeAttribute("hidden")
         document.querySelector(".alert button").ontouchstart = function() {
-            alert("hi")
             document.querySelector(".alert").setAttribute("style", "opacity: 0")
             setTimeout(() => {
                 document.querySelector(".main").setAttribute("style", "opacity: 100; transition: opacity 250ms")
