@@ -16,8 +16,6 @@ function checkMobile() {
     return check;
 }
 
-document.querySelector(".topBar").innerHTML = "navigator.userAgentData.platform"
-
 // if (checkMobile()) {
     
     if (/iPhone/.test(navigator.userAgent)) {
@@ -28,6 +26,9 @@ document.querySelector(".topBar").innerHTML = "navigator.userAgentData.platform"
             document.querySelector(".alert").removeAttribute("hidden")
             document.querySelector(".alert button").ontouchstart = function() {
                 document.querySelector(".alert").setAttribute("style", "opacity: 0")
+                setTimeout(() => {
+                    document.querySelector(".alert").remove()
+                }, 250);
                 setTimeout(() => {
                     document.querySelector(".main").setAttribute("style", "opacity: 100; transition: opacity 250ms")
                 }, 750);
