@@ -49,6 +49,7 @@ if (iOS()) {
         document.querySelector(".main").setAttribute("style", "opacity: 0")
         document.querySelector(".alert").removeAttribute("hidden")
         document.querySelector(".alert button").ontouchstart = function() {
+            alert("hi")
             document.querySelector(".alert").setAttribute("style", "opacity: 0")
             setTimeout(() => {
                 document.querySelector(".main").setAttribute("style", "opacity: 100; transition: opacity 250ms")
