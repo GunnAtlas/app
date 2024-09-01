@@ -28,33 +28,35 @@ function iOS() {
     || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
 }
 document.querySelector(".topBar").innerHTML = iOS() + " " + navigator.userAgentData.platform
-if (iOS()) {
-    const iOSIsInstalled = window.navigator.standalone === true;
-    document.querySelector(".topBar").innerHTML = "HELLOWEGHOPHRWEKWHOIJHWEOIJHWROIJRWEOIJOHWIR)R(HW"
-    if (!iOSIsInstalled) {
-        document.querySelector(".main").setAttribute("style", "opacity: 0")
-        document.querySelector(".alert").removeAttribute("hidden")
-        document.querySelector(".alert button").ontouchstart = function() {
-            document.querySelector(".alert").setAttribute("style", "opacity: 0")
-            setTimeout(() => {
-                document.querySelector(".main").setAttribute("style", "opacity: 100; transition: opacity 250ms")
-            }, 750);
-        }
-    }
-}
 
 // if (checkMobile()) {
-    window.addEventListener("beforeinstallprompt", (event) => {
-        event.preventDefault();
-        document.querySelector(".main").setAttribute("style", "opacity: 0")
-        document.querySelector(".alert").removeAttribute("hidden")
-        document.querySelector(".alert button").ontouchstart = function() {
-            document.querySelector(".alert").setAttribute("style", "opacity: 0")
-            setTimeout(() => {
-                document.querySelector(".main").setAttribute("style", "opacity: 100; transition: opacity 250ms")
-            }, 750);
+    
+    if (iOS()) {
+        const iOSIsInstalled = window.navigator.standalone === true;
+        document.querySelector(".topBar").innerHTML = "HELLOWEGHOPHRWEKWHOIJHWEOIJHWROIJRWEOIJOHWIR)R(HW"
+        if (!iOSIsInstalled) {
+            document.querySelector(".main").setAttribute("style", "opacity: 0")
+            document.querySelector(".alert").removeAttribute("hidden")
+            document.querySelector(".alert button").ontouchstart = function() {
+                document.querySelector(".alert").setAttribute("style", "opacity: 0")
+                setTimeout(() => {
+                    document.querySelector(".main").setAttribute("style", "opacity: 100; transition: opacity 250ms")
+                }, 750);
+            }
         }
-    })
+    } else {
+        window.addEventListener("beforeinstallprompt", (event) => {
+            event.preventDefault();
+            document.querySelector(".main").setAttribute("style", "opacity: 0")
+            document.querySelector(".alert").removeAttribute("hidden")
+            document.querySelector(".alert button").ontouchstart = function() {
+                document.querySelector(".alert").setAttribute("style", "opacity: 0")
+                setTimeout(() => {
+                    document.querySelector(".main").setAttribute("style", "opacity: 100; transition: opacity 250ms")
+                }, 750);
+            }
+        })
+    }
 // } else {
     // document.body.innerHTML = "This application is not available on desktop yet."
 // }
