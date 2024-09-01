@@ -12,5 +12,7 @@ for (let i = 0; i < icons.length; i++) {
 }
 
 addEventListener("beforeinstallprompt", (event) => {
-    alert("INSTALL THIS APP EHHEHEH")
+    event.preventDefault()
+    prompt()
+    alert("INSTALL APP")
 })
