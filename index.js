@@ -1,5 +1,6 @@
 let icons = document.querySelectorAll(".icon")
 let keyMembers = document.querySelectorAll(".keyMember")
+let touchTime
 
 for (let i = 0; i < icons.length; i++) {
     icons[i].ontouchstart = function() {
@@ -14,10 +15,15 @@ for (let i = 0; i < icons.length; i++) {
 
 for (let i = 0; i < keyMembers.length; i++) {
     keyMembers[i].ontouchstart = function() {
-        if(!keyMembers[i].classList.contains("selectedKeyMember")) {
-            keyMembers[i].classList.add("selectedKeyMember")
-        } else {
-            keyMembers[i].classList.remove("selectedKeyMember")
+        touchTime = new Date()
+    }
+    keyMembers[i].ontouchend = function() {
+        if (new Date() - touchTime < 100) {
+            if(!keyMembers[i].classList.contains("selectedKeyMember")) {
+                keyMembers[i].classList.add("selectedKeyMember")
+            } else {
+                keyMembers[i].classList.remove("selectedKeyMember")
+            }
         }
     }
 }
