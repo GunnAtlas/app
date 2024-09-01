@@ -63,6 +63,9 @@ function alertPopUp(event) {
     document.querySelector(".alert button").ontouchstart = function() {
         document.querySelector(".alert").setAttribute("style", "opacity: 0")
         setTimeout(() => {
+            document.querySelector(".alert").remove()
+        }, 250);
+        setTimeout(() => {
             document.querySelector(".main").setAttribute("style", "opacity: 100; transition: opacity 250ms")
         }, 750);
     }
