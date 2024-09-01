@@ -7,8 +7,8 @@
         "sizes": "512x512"
         }
     ],
-    "display": "standalone",
-    "display-overide": "standalone",
+    "display": "fullscreen",
+    "display-overide": "fullscreen",
     "prefer_related_applications": false,
     "start_url": "https://gunnatlas.github.io/app/"
 }  
