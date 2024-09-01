@@ -3,9 +3,9 @@
     "name": "GunnAtlas",
     "icons": [
         {
-        "src": "./512.png",
+        "src": "./assets/icons/icon.png",
         "type": "image/png",
-        "sizes": "64x64"
+        "sizes": "200x200"
         }
     ],
     "display": "standalone",
