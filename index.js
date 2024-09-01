@@ -16,7 +16,7 @@ function checkMobile() {
     return check;
 }
 
-document.querySelector(".topBar").innerHTML = navigator.userAgentData.platform
+document.querySelector(".topBar").innerHTML = "navigator.userAgentData.platform"
 
 // if (checkMobile()) {
     
