@@ -113,7 +113,35 @@ p {
 }
 
 .selected {
-    filter: brightness(120%);
+    filter: brightness(100%);
+}
+
+.pingButton {
+    position: absolute;
+    right: 1vw;
+    width: 18vw;
+    height: 18vw;
+    border-radius: 100%;
+    border: none;
+    outline: none;
+    background-color: #212121;
+    bottom: 22vh;
+}
+
+.floorButton {
+    position: absolute;
+    right: 20vw;
+    width: 13vw;
+    height: 13vw;
+    border-radius: 100%;
+    border: none;
+    outline: none;
+    background-color: #212121;
+    bottom: 22.3vh;
+}
+
+.floorImage {
+    transition: filter 250ms;
 }
 
 .alert {

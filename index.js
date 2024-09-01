@@ -8,6 +8,17 @@ let order = {
     "schedule": 3,
     "clubs": 4
 }
+let floor = 1
+
+document.querySelector(".floorButton").ontouchstart = function() {
+    if (floor == 1) {
+        document.querySelector(".floorImage").setAttribute("style", "filter: brightness(100%)")
+        floor = 2
+    } else {
+        document.querySelector(".floorImage").setAttribute("style", "filter: brightness(500%)")
+        floor = 1
+    }
+}
 
 for (let i = 0; i < icons.length; i++) {
     icons[i].ontouchstart = function() {
