@@ -29,9 +29,9 @@ function iOS() {
 }
 
 if (iOS()) {
-    const iOSCanInstall = 'standalone' in window.navigator;
     const iOSIsInstalled = window.navigator.standalone === true;
-    if (!iOSIsInstalled && iOSCanInstall) {
+    alert("hi")
+    if (!iOSIsInstalled) {
         document.querySelector(".main").setAttribute("style", "opacity: 0")
         document.querySelector(".alert").removeAttribute("hidden")
         document.querySelector(".alert button").ontouchstart = function() {
