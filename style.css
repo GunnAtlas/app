@@ -27,6 +27,11 @@ p {
     display: flex;
     align-items: center;
     overflow: scroll;
+    scrollbar-width: 0;
+}
+
+.topBar::-webkit-scrollbar {
+    display: none;
 }
 
 .bottomBar {

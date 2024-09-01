@@ -34,34 +34,45 @@ function checkMobile() {
     return check;
 }
 
+function alert(event) {
+    if (event) {
+        event.preventDefault();
+    }
+    document.querySelector(".main").setAttribute("style", "opacity: 0")
+    document.querySelector(".alert").removeAttribute("hidden")
+    document.querySelector(".alert button").ontouchstart = function() {
+        document.querySelector(".alert").setAttribute("style", "opacity: 0")
+        setTimeout(() => {
+            document.querySelector(".main").setAttribute("style", "opacity: 100; transition: opacity 250ms")
+        }, 750);
+    }
+}
+
 // if (checkMobile()) {
-    
     if (/iPhone/.test(navigator.userAgent)) {
         const iOSIsInstalled = window.navigator.standalone === true;
         if (!iOSIsInstalled) {
-            document.querySelector(".main").setAttribute("style", "opacity: 0")
-            document.querySelector(".alert").removeAttribute("hidden")
-            document.querySelector(".alert button").ontouchstart = function() {
-                document.querySelector(".alert").setAttribute("style", "opacity: 0")
-                setTimeout(() => {
-                    document.querySelector(".alert").remove()
-                }, 250);
-                setTimeout(() => {
-                    document.querySelector(".main").setAttribute("style", "opacity: 100; transition: opacity 250ms")
-                }, 750);
-            }
+            alert()
         }
     } else {
         window.addEventListener("beforeinstallprompt", (event) => {
-            event.preventDefault();
-            document.querySelector(".main").setAttribute("style", "opacity: 0")
-            document.querySelector(".alert").removeAttribute("hidden")
-            document.querySelector(".alert button").ontouchstart = function() {
-                document.querySelector(".alert").setAttribute("style", "opacity: 0")
-                setTimeout(() => {
-                    document.querySelector(".main").setAttribute("style", "opacity: 100; transition: opacity 250ms")
-                }, 750);
-            }
+            document.querySelector(".alert").innerHTML = `
+                <h1>Attention!</h1><br><br>
+                <p style="font-size: 4vw">
+                    It looks like you're using GunnAtlas on the browser!<br>
+                    It is more convenient to use the app. 
+                    To do this, tap the three dots at the top right corner, then tap add to homescreen.<br><br>
+                </p>
+                <img src="assets/images/tutorial2.png" style="border-radius: 25px" width="533vw", height="133vh" />
+                <br><br>
+                <p style="font-size: 4vw">
+                    Then, tap install on the bottom. 
+                </p>
+                <br>
+                <img src="assets/images/tutorial3.png" style="border-radius: 25px" width="533vw", height="300vh" />
+                <button>Ok</button>
+            `
+            alert(event)
         })
     }
 // } else {
