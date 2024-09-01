@@ -32,7 +32,7 @@ p {
     bottom: 0;
     background-color: #212121;
     width: 100vw;
-    height: 12vh;
+    height: 13vh;
     left: 0;
     border-radius: 50px 50px 0 0;
     transition: height 250ms;
@@ -51,6 +51,7 @@ p {
     width: 18vw;
     height: 18vw;
     transition: filter 250ms;
+    margin-bottom: 1vh;
 }
 
 .selected {
