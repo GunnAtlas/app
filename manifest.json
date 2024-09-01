@@ -9,5 +9,6 @@
     ],
     "display": "standalone",
     "display-overide": "standalone",
-    "start_url": "."
+    "start_url": ".",
+    "background-color": "#212121"
 }  
