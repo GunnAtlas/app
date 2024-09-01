@@ -23,7 +23,6 @@ p {
     width: 100vw;
     height: 7vh;
     left: 0;
-    border-radius: 0 0 50px 50px;
     font-size: 5vw;
     display: flex;
     align-items: center;
