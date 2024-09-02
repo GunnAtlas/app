@@ -1,0 +1,203 @@
+{
+    "monday": [
+        {
+            "name": "Biotechnology Club",
+            "room": "L-2",
+            "description": "Gunn Biotechnology Club welcomes all students with an interest in biotechnology. Our goal is to empower students to learn about the applications of biotechnology and the role they can play in this field. We offer weekly educational series that introduce different aspects of biotechnology and invite guest speakers from the industry to share their journeys and experiences. We hope to help our members seek an exciting career in the field of biotechnology!"
+        },
+        {
+            "name": "Joy Dance Club",
+            "room": "V-1",
+            "description": "Joy Dance Club - Boost Your School Life with Fun, Friends, and Positivity! Release Stress, Make Memories, and Feel the Joy!! Balancing and navigating stress are everyday challenges in high school and life. It's not about avoiding stress, but how we manage it that counts. At the Joy Dance Club, we've found a delightful way to tackle it – dancing! A few minutes during lunch to re-energize, make memories, and let go of stress. Our club is a warm and non-judgemental community, where dance skills don't matter. All you need is a willingness to try something new and enjoy yourself. So don’t hesitate, join the Joy Dance Club today, and let the joy begin! 😊 Check out our club instagram!! https://www.instagram.com/gunn_joydance__club/"
+        },
+        {
+            "name": "Mock Trial Club",
+            "room": "N-205",
+            "description": "Mock trial meets in N-205 after school on Mondays. We combine fields like theater, law, and debate into a fun experience for everyone! If you’re interested in acting, you can join and act as a witness; if you want a career in law, you can be an attorney; and if you just want a low-stakes and low-commitment role, you have options like clerk or bailiff. Each person gets a role depending on their interests and in the spring we compete against each other just like an actual trial.",
+            "after-school": true
+        },
+        {
+            "name": "Physics Club",
+            "room": "J-9",
+            "description": "The Gunn Physics Club will have interactive presentations and demonstrations on content both in and beyond physics classes. We provide members the opportunity to review, attempt more challenging questions, study for AP exams, prepare for physics competitions (such as the F=ma & USAPhO), and learn about other interesting areas of physics. All are welcome; no prior experience required!"
+        },
+        {
+            "name": "The Chariot",
+            "room": "N-106",
+            "description": "The Chariot is Gunn's nonpartisan, student-led social and political magazine. We aim to foster discussion of social and political events at Gunn through political forums and publishing articles. To view some of our published articles, get in touch with us, or learn more about us, visit chariotonline.wordpress.com."
+        },
+        {
+            "name": "Youth Community Service - Interact (YCS-I)",
+            "room": "N-115",
+            "description": "Youth Community Service - Interact (YCS-I) is a community service club that works with the community organization, YCS, and the international program, Interact, to try and improve our community. Some of the events we put on are Service Day, Service Fair, Service Trip, and an Open Mic. We also regularly update club members on different community service opportunities as we are notified about them."
+        }
+    ],
+    "tuesday": [
+        {
+            "name": "Competitive Programming Club",
+            "room": "N-214",
+            "description": "In Gunn Competitive Programming Club, we teach students programming algorithms, data structures, and problem solving. We motivate and train students to participate in prestigious competitive programming contests, such as USACO, Codeforces, Google Code Jam, and other local competitions, some of which our teams have won. We will be hosting the Bay Area Programming Contest in the spring. During club time, we share knowledge and have fun with our club members!"
+        },
+        {
+            "name": "Cooking Club",
+            "room": "N-113",
+            "description": "From Master Chefs to Instant Ramen slurpers, the Cooking Club is for anyone passionate about food! Whether you like the eating or the cooking part of the process, we have a place for you. Our purpose is to learn about the significance of food in our daily lives and how it shapes our cultures. We host fun activities like making pickles, build-your-own cakes, latte art lessons, and much more! Join us in N113 every Tuesday at lunch!"
+        },
+        {
+            "name": "Green Team",
+            "room": "J-3",
+            "description": "Learn about the environment and climate activism through fun activities, presentations, guest speakers, and more. We also provide many local volunteer opportunities such as tree plantings and beach cleanups!"
+        },
+        {
+            "name": "Helios Magazine Club",
+            "room": "N-106",
+            "description": "The Helios Magazine is a club open to all Gunn students who are interested in contributing to a professional and meaningful publication on campus, whether through art, design, or writing. We will work on distributing an entertaining, interesting, and thought-provoking magazine online every quarter, while teaching members the importance of ethical journalism and creative, professional writing. All welcome!"
+        },
+        {
+            "name": "Korean Club",
+            "room": "N-212",
+            "description": "This club is for students who love Korean culture to share their interest and and spread the beauty of Korean culture to all gunn high school students. During the club, we will be watching several Korean media and talk with each other to share our thoughts. Also, over the course of the semester, we will be sharing informations for competitions or other events that are from South Korean consulate or are related to Korean Organizations."
+        },
+        {
+            "name": "Philosophy Club",
+            "room": "N-101",
+            "description": "Gunn Philosophy Club is a place to cultivate your critical thinking and discussion skills through examination of famous philosophers and the questions they have raised. We will be exploring the roots of philosophy, as well as questions such as, “What is free will?” and “What is justice?” This year, we will address two of the four major branches of philosophy: metaphysics (what exists?) and ethics (what is ethical?). No prior experience is necessary, and all are welcome!"
+        },
+        {
+            "name": "Quiz Bowl",
+            "room": "C-1",
+            "description": "The Quiz Bowl club serves as a dynamic and intellectually stimulating platform for students to engage in competitive and collaborative academic competitions. Its primary purpose is to foster a passion for knowledge, critical thinking, and teamwork among its members. Through regular meetings and practice sessions, club participants delve into a wide array of subjects, ranging from literature and history to science and pop culture. Members develop their ability to quickly and accurately answer diverse trivia questions, honing their analytical skills and expanding their general knowledge base. The club also prepares for and participates in Quiz Bowl tournaments, where they compete against other schools regionally and nationally, putting their accumulated knowledge to the test in a fast-paced and exhilarating environment. Overall, the Quiz Bowl club offers a vibrant platform for intellectual growth, friendly competition, and the joy of learning for its enthusiastic members."
+        },
+        {
+            "name": "Title IX",
+            "room": "N-110",
+            "description": "We're dedicated to promoting sexual violence prevention at schools through advocacy. Throughout the year, members will be collaborating with local administrators and other community members on educational content, policy-writing, bringing guest speakers to campus, social media projects, and more! Title IX Club is open to everyone, whether you're a survivor, someone who is passionate about sexual violence prevention, or just interested in advocacy."
+        }
+    ],
+    "wednesday": [
+        {
+            "name": "Ceramics Club",
+            "room": "M-3",
+            "description": "Ceramics club is an open space for students who love to create. We will lead clay projects that club members will make and get to keep. No experience needed. Everyone, no matter the skill level, will find that there is a project suited to them, along with kind club officers who love to help."
+        },
+        {
+            "name": "Chinese Culture Club",
+            "room": "H-4",
+            "description": "Our club meets every Wednesday during lunch in H-04. We will promote and go in depth with Chinese culture to members. Some topics during our meetings include festivals, food, modern ideas, traditions in different regions, and celebrations. Some activities include presentations, online and outdoor games, and snacks."
+        },
+        {
+            "name": "Intramural Sports Club",
+            "room": "V-25",
+            "description": "Does lunchtime feel boring? Come play games like soccer and basketball! No experience required, just come to exercise and have fun."
+        },
+        {
+            "name": "Juggling Club",
+            "room": "Senior Quad or H-3",
+            "description": "The purpose of our club is to spread the knowledge of juggling and manipulation arts so that people can enjoy the fun it brings and hone their skills. It also gives them a healthy break from long hours of studying. We will also foster a supporting community that propagates a love for juggling."
+        },
+        {
+            "name": "Math Circle",
+            "room": "N-214",
+            "description": "We seek to promote an appreciation and understanding of math beyond the typical high school curriculum by hosting weekly talks, in-house contests, games, and guest speakers. We also help students prepare for and participate in many contests throughout the year, with a focus on math competitions such as AMC, and college-run ones at Harvard, MIT and Stanford."
+        },
+        {
+            "name": "Science Bowl",
+            "room": "In the J-bldg. Will finalize based on where advisor wishes to meet & availability.",
+            "description": "We are Gunn Science Bowl, a school club dedicated to spreading curiosity for STEM and catalyzing exploration. Annually, we compete in the National Science Bowl, a nationwide competition hosted by the U.S. Department of Energy. We seek to create a community of intelligent, driven individuals in the pursuit of knowledge, and while we strive for excellence, we also promote an environment of teamwork, ingenuity, and creativity."
+        },
+        {
+            "name": "TEDxGunnHighSchool",
+            "room": "C-8",
+            "description": "Our mission is to cultivate ideas and conversation through an annually hosted TEDx conference held in Spangenberg Theatre. Our three committees, business, speakers, and design work hard each year to improve quality of speakers and quality of experience for all our audience members. The speakers committee works with each speaker individually to write, edit and rehearse each talk. The business committee raises all funds to cover the cost of a fully fledged TEDx conference, which include grants and small fundraisers. The design committee creates logos, merchandise design, and social media designs. It's TEDx, but Gunn."
+        },
+        {
+            "name": "Voices of Unity Club",
+            "room": "G-1",
+            "description": "Welcome to the Voices of Unity Club, where languages that often go unheard take center stage. Join us in exploring the beauty of lesser-known languages through language spotlights, podcast discussions and documentary screenings that celebrate the diversity of our world's voices. Together, we will explore fostering unity through linguistic and cultural discovery, so every language can find its voice. Anyone is welcome to join to learn about lesser-known languages and cultures, and to share about their own language and culture."
+        }
+    ],
+    "thursday": [
+        {
+            "name": "Board Game Club",
+            "room": "PE Classroom",
+            "description": "Our board gaming club is a group of people who regularly meet to play board games during lunch times. All members will chat with each others and having fun to enjoy the board game."
+        },
+        {
+            "name": "German Club",
+            "room": "H-2",
+            "description": "We play authentic German games, listen to German music, eat and make delicious German food, and engage in activities that parallel those of a typical German teenager."
+        },
+        {
+            "name": "Japan Culture Club",
+            "room": "H-3",
+            "description": "The purpose of the Japanese Culture Club is to educate students about the many aspects of Japanese Culture. We want to emphasize traditions, history, and pop culture. We want to teach the rich culture of this amazing country to all students! We will have a wide variety of lessons taught by the members of our club, including Japanese pop culture, traditions, and history. We will also have hands-on activities, such as calligraphy and food days. We will also include different pop-culture lessons in the format of videos and presentations, including occasional Japanese movie viewing (Anime, Documentary, etc) that will expose members to the present-day trends and culture in Japan."
+        },
+        {
+            "name": "Origami Club",
+            "room": "N-211",
+            "description": "A place for students to relax and learn how to make origami, helping boost mental health as well as increasing creativity for students. All levels of experience are welcome as we teach both beginner and more advanced origami, and students can come to just talk and relax as well!"
+        },
+        {
+            "name": "Reach Out, Care, Know (ROCK)",
+            "room": "N-114",
+            "description": "Reach Out, Care, Know (ROCK) at Gunn High School in Palo Alto, California is dedicated to reducing the stigma surrounding mental health through education, outreach, and events to remind our peers the importance of valuing one's wellness. Additionally, students participate in trainings, so they know how to be a \"ROCK\" -- someone who is able to approach a friend who may be battling a mental health issue, provide support, and connect them to the help they need and deserve. We have meetings every Thursday where we plan events such as the 5k Mental Health Awareness Walk and the mobile barnyard during Finals Week. We also participate in rock painting and Sources of Strength presentations."
+        },
+        {
+            "name": "Science Olympiad",
+            "room": "L-1",
+            "description": "Science Olympiad (SciOly) promotes the study of scientific topics by preparing members for nearby competitions. Members will get to explore a variety of subjects, including biology, chemistry, physics, engineering, and environmental science, acquiring knowledge and skills applicable for future science careers. They will also partake in fun club activities, such as trivia games, hands-on experiments, and team bonding. Through studying and competing together, members will build strong connections with their peers and make new friends. No prior experience is necessary — only an interest to learn more about science!"
+        },
+        {
+            "name": "Spanish Club",
+            "room": "G-1",
+            "description": "Join Gunn Spanish Club to explore the rich Spanish-speaking culture through games, food, and crafts! NO Spanish speaking knowledge is required! Spanish club allows you to build a close community at Gunn with people from all grades, and members of Spanish club who are sophomores-seniors have the opportunity to become part of the Spanish National Honors Society. Join us on Thursdays at lunch in room H-5."
+        },
+        {
+            "name": "Sports Fan Club",
+            "room": "N-113",
+            "description": "The purpose of the Sports Fan Club is to provide a fun and welcoming environment for anyone to have an engaging discussion/debate about sports related topics. Anyone is welcome, prior sports knowledge is not required! We want to educate and inform people about recent sports news and headlines. We will also do fantasy leagues for basketball, football, and others. We hope to grow this community and spread sport knowledge, while having fun!"
+        },
+        {
+            "name": "Timewinder",
+            "room": "N-109",
+            "description": "Timewinder is a game development club that provides students with a platform to learn and experiment with Unity. From tic-tac-toe to platformers, we'll learn to develop various games and understand the key features of Unity. All skill levels are welcome, so don't be scared to stop by and see what we're up to. We hope to build a community of people who are willing to learn and grow as game developers with us!"
+        },
+        {
+            "name": "United Computations",
+            "room": "N-215",
+            "description": "United Computations brings together a community of people interested in CS. During our weekly lunch meetings, we explore the various fields of CS through hands-on activities, guest speakers, lectures, and more. We also plan and run Gunn’s annual hackathon (GunnHacks 10.0) -- and any club member can apply to help out with publicity, website, events planning, and sponsorships! This year, we also plan to launch projects to help groups in our community revamp their websites and host additional introductory coding lessons to anyone interested. We’re one of the longest-running AND largest CS clubs at Gunn. Anyone is welcome to join!"
+        },
+        {
+            "name": "Vietnamese Culture Club (VCC)",
+            "room": "N-103",
+            "description": "The Vietnamese Culture Club (VCC) is dedicated to the exploration, education, and understanding of the Vietnamese customs, traditions, and language. Through music, food, and art, our goal is to have every member develop a greater appreciation for Vietnamese culture. We welcome all students interested to partake in our wide range of inclusive social activities and cultural celebrations."
+        }
+    ],
+    "friday": [
+        {
+            "name": "Amnesty International Club",
+            "room": "C-8",
+            "description": "This club focuses on Amnesty International, a private activism, and human rights group, with more than 10 million members across the world. We sign petitions, fundraise, engage and push legislation, local and national policy change, with our works reaching people like Congress, the US President, Supreme Court, etc. We also branch past the national scale and work with international governments, judicial systems, non-profits, and other private, human rights organizations. We spread awareness over current events, open discussions, and find purpose in enacting real, tangible, policy changes in the world. Simultaneously, we also wish to simplify, and foster more access to topics like human rights, big legislation, government structures, public policy, etc. and much more! Too often, these are subjects that may traditionally overlook or intimidate high school voices. Amnesty International Club strives to give Gunn High students the power, resources, and knowledge to mobilize your own action in justice. If you enjoy social justice, political science, law, current events, public policy, philosophy, environmental science, research, media, debate, etc. or simply want a voice in your own justice, Amnesty International Club is the club for you!"
+        },
+        {
+            "name": "HOSA",
+            "room": "L-2",
+            "description": "HOSA stands for Health Occupations Students of America. It is a national organization that promotes career opportunities in the healthcare industry. HOSA helps students develop leadership and technical skill competencies through a variety of regional and national conferences and competitions. We plan on having several guest speakers, attending HOSA competitions, and we will overall develop people's leadership skills in the medical field by presenting about several topics relating to the medical field they may be interested in."
+        },
+        {
+            "name": "Organic Garden Club",
+            "room": "The Garden (by K-5)",
+            "description": "We grow and harvest food for student and classroom curriculum. All are welcome, no experience necessary!"
+        },
+        {
+            "name": "Pandora's Box Creative Magazine",
+            "room": "N-114",
+            "description": "Pandora’s Box is a student-led creative magazine that showcases writing, art, and photography from Gunn students. Pandora’s Box has been in production for over 20 years. Come join us and be a part of the team!"
+        },
+        {
+            "name": "Psychology Club",
+            "room": "C-2",
+            "description": "Gunn Psych club is a student-led community dedicated to learning about the human mind and behavior."
+        }
+    ]
+}
