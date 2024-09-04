@@ -82,7 +82,7 @@ function alertPopUp(event) {
     }
 }
 
-// if (checkMobile()) {
+if (checkMobile() || window.location.href == "http://127.0.0.1:5500/index.html") {
     if (/iPhone/.test(navigator.userAgent)) {
         const iOSIsInstalled = window.navigator.standalone === true;
         if (!iOSIsInstalled) {
@@ -109,6 +109,6 @@ function alertPopUp(event) {
             alertPopUp(event)
         })
     }
-// } else {
-    // document.body.innerHTML = "This application is not available on desktop yet."
-// }
+} else {
+    document.body.innerHTML = "This application is not available on desktop yet."
+}
