@@ -6,7 +6,10 @@ html, body {
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
     overflow: hidden;
- }
+}
+* {
+    overflow: hidden;
+}
 
 h1 {
     text-align: center;
@@ -18,7 +21,7 @@ p {
 
 .map {
     position: absolute;
-    top: 20vw;
+    top: 50vw;
     left: 27vw;
 }
 
