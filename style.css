@@ -16,6 +16,12 @@ p {
     font-size: 5vw;
 }
 
+.map {
+    position: absolute;
+    top: 20vw;
+    left: 27vw;
+}
+
 .pages {
     position: absolute;
     width: 100vw;
