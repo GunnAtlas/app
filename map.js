@@ -4,5 +4,5 @@ var pinch = new Hammer.Pinch()
 mc.add([pinch])
 
 mc.on("pinch", function(ev) {
-    document.querySelector(".hi").innerText = ev.scale
+    document.querySelector(".hi").innerText = ev.scale.x
 })
