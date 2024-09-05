@@ -97,13 +97,13 @@ if (checkMobile() || window.location.href == "http://127.0.0.1:5500/index.html")
                     It is more convenient to use the app. 
                     To do this, tap the three dots at the top right corner, then tap add to homescreen.<br><br>
                 </p>
-                <img src="assets/images/tutorial2.png" style="border-radius: 25px" width="533vw", height="133vh" />
+                <img src="assets/images/tutorial2.png" style="border-radius: 25px" width="58%" />
                 <br><br>
                 <p style="font-size: 4vw">
                     Then, tap install on the bottom. 
                 </p>
                 <br>
-                <img src="assets/images/tutorial3.png" style="border-radius: 25px" width="533vw", height="300vh" />
+                <img src="assets/images/tutorial3.png" style="border-radius: 25px" width="58%" />
                 <button>Ok</button>
             `
             alertPopUp(event)
