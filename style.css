@@ -9,6 +9,7 @@ html, body {
 }
 * {
     overflow: hidden;
+    outline: 1px solid red
 }
 
 h1 {

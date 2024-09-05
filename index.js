@@ -71,7 +71,11 @@ function alertPopUp(event) {
     }
     document.querySelector(".main").setAttribute("style", "opacity: 0")
     document.querySelector(".alert").removeAttribute("hidden")
+    let clicked = false
+
     document.querySelector(".alert button").ontouchstart = function() {
+        if (clicked) {return}
+        clicked = true
         document.querySelector(".alert").setAttribute("style", "opacity: 0")
         setTimeout(() => {
             document.querySelector(".alert").remove()
