@@ -14,26 +14,7 @@ function hammerIt(elm) {
         transform = "",
         el = elm;
 
-    hammertime.on('doubletap pan pinch panend pinchend', function(ev) {
-        if (ev.type == "doubletap") {
-            transform =
-                "translate3d(0, 0, 0) " +
-                "scale3d(2, 2, 1) ";
-            scale = 2;
-            last_scale = 2;
-            try {
-                if (window.getComputedStyle(el, null).getPropertyValue('-webkit-transform').toString() != "matrix(1, 0, 0, 1, 0, 0)") {
-                    transform =
-                        "translate3d(0, 0, 0) " +
-                        "scale3d(1, 1, 1) ";
-                    scale = 1;
-                    last_scale = 1;
-                }
-            } catch (err) {}
-            el.style.webkitTransform = transform;
-            transform = "";
-        }
-
+    hammertime.on('pan pinch panend pinchend', function(ev) {
         //pan    
         if (scale != 1) {
             posX = last_posX + ev.deltaX;
@@ -57,7 +38,7 @@ function hammerIt(elm) {
 
         //pinch
         if (ev.type == "pinch") {
-            scale = Math.max(.999, Math.min(last_scale * (ev.scale), 4));
+            scale = Math.max(.999, Math.min(last_scale * (ev.scale), 8));
         }
         if(ev.type == "pinchend"){last_scale = scale;}
 
