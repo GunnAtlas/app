@@ -38,7 +38,7 @@ function hammerIt(elm) {
 
         //pinch
         if (ev.type == "pinch") {
-            scale = Math.max(.999, Math.min(last_scale * (ev.scale), 8));
+            scale = Math.max(.999, Math.min(last_scale * (ev.scale), 20));
         }
         if(ev.type == "pinchend"){last_scale = scale;}
 
