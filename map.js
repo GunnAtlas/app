@@ -1,3 +1,19 @@
+let fingersOnScreen = 0
+
+setInterval(function() {
+
+}, 10)
+
+document.ontouchstart = function() {
+    fingersOnScreen++
+    document.querySelector(".hi").innerText = fingersOnScreen
+}
+
+document.ontouchend = function() {
+    fingersOnScreen--
+    document.querySelector(".hi").innerText = fingersOnScreen
+}
+
 function hammerIt(elm) {
     hammertime = new Hammer(elm, {});
     hammertime.get('pinch').set({
@@ -50,12 +66,18 @@ function hammerIt(elm) {
 
         if (scale != 1) {
             transform =
-                "translate3d(" + posX + "px," + posY + "px, 0) " +
-                "scale3d(" + scale + ", " + scale + ", 1)";
+                "translate3d(" + posX + "px," + posY + "px, 0) "
+        }
+        function resize(scale) {
+            let svgWidth = parseInt(elm.getAttribute('width'));
+            elm.setAttribute('width', `${(svgWidth * scale)}`);
+            let svgHeight = parseInt(elm.getAttribute('height'));
+            elm.setAttribute('height', `${(svgHeight * scale)}`);
         }
 
         if (transform) {
             el.style.webkitTransform = transform;
+            resize(scale)
         }
     });
 }
