@@ -37,7 +37,7 @@ function hammerIt(elm) {
         transform = "",
         el = elm;
 
-    hammertime.on('pan pinch panend pinchend', function(ev) {
+    hammertime.on('doubletap pan pinch panend pinchend', function(ev) {
         //pan    
         if (scale != 1) {
             posX = last_posX + ev.deltaX;
@@ -61,7 +61,7 @@ function hammerIt(elm) {
 
         //pinch
         if (ev.type == "pinch") {
-            scale = Math.max(.999, Math.min(last_scale * (ev.scale), 20));
+            scale = Math.max(.999, Math.min(last_scale * (ev.scale), 4));
         }
         if(ev.type == "pinchend"){last_scale = scale;}
 
@@ -73,18 +73,12 @@ function hammerIt(elm) {
 
         if (scale != 1) {
             transform =
-                "translate3d(" + posX + "px," + posY + "px, 0) "
-        }
-        function resize(scale) {
-            let svgWidth = parseInt(elm.getAttribute('width'));
-            elm.setAttribute('width', `${(svgWidth * scale)}`);
-            let svgHeight = parseInt(elm.getAttribute('height'));
-            elm.setAttribute('height', `${(svgHeight * scale)}`);
+                "translate3d(" + posX + "px," + posY + "px, 0) " +
+                "scale3d(" + scale + ", " + scale + ", 1)";
         }
 
         if (transform) {
             el.style.webkitTransform = transform;
-            resize(scale)
         }
     });
 }
