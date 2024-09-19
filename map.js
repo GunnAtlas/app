@@ -7,7 +7,7 @@ setInterval(function() {
     }
     if (canUpscale) {
         canUpscale = false
-        document.querySelector(".mapContainer").innerHTML += " "
+        // document.querySelector(".mapContainer").innerHTML += " "
     }
 }, 10)
 
