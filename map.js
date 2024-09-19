@@ -7,7 +7,7 @@ setInterval(function() {
     }
     if (canUpscale) {
         canUpscale = false
-        // document.querySelector(".mapContainer").innerHTML += " "
+        document.querySelector(".mapContainer").innerHTML += " "
     }
 }, 10)
 
@@ -39,7 +39,7 @@ function hammerIt(elm) {
 
     hammertime.on('pan pinch panend pinchend', function(ev) {
         //pan    
-        // if (scale != 1) {
+        if (scale != 1) {
             posX = last_posX + ev.deltaX;
             posY = last_posY + ev.deltaY;
             max_pos_x = Math.ceil((scale - 1) * el.clientWidth / 2);
@@ -56,7 +56,7 @@ function hammerIt(elm) {
             if (posY < -max_pos_y) {
                 posY = -max_pos_y;
             }
-        // }
+        }
 
 
         //pinch
