@@ -1,25 +1,25 @@
-let fingersOnScreen = 0
-let canUpscale = false
+// let fingersOnScreen = 0
+// let canUpscale = false
 
-setInterval(function() {
-    if (fingersOnScreen == 0) {
-        canUpscale = true
-    }
-    if (canUpscale) {
-        canUpscale = false
-        document.querySelector(".mapContainer").innerHTML += " "
-    }
-}, 10)
+// setInterval(function() {
+//     if (fingersOnScreen == 0) {
+//         canUpscale = true
+//     }
+//     if (canUpscale) {
+//         canUpscale = false
+//         document.querySelector(".mapContainer").innerHTML += " "
+//     }
+// }, 10)
 
-document.ontouchstart = function() {
-    fingersOnScreen++
-    document.querySelector(".hi").innerText = fingersOnScreen
-}
+// document.ontouchstart = function() {
+//     fingersOnScreen++
+//     document.querySelector(".hi").innerText = fingersOnScreen
+// }
 
-document.ontouchend = function() {
-    fingersOnScreen--
-    document.querySelector(".hi").innerText = fingersOnScreen
-}
+// document.ontouchend = function() {
+//     fingersOnScreen--
+//     document.querySelector(".hi").innerText = fingersOnScreen
+// }
 
 function hammerIt(elm) {
     hammertime = new Hammer(elm, {});
