@@ -80,7 +80,14 @@ function hammerIt(elm) {
         if (transform) {
             el.style.webkitTransform = transform;
         }
-    });
+    })
+    hammertime.get("pinchend").set({
+        enable: true
+    })
+
+    hammertime.on("pinchend", (ev) => {
+        document.querySelector(".mapContainer").innerHTML += " "
+    })
 }
 
 hammerIt(document.querySelector(".map"))
