@@ -87,6 +87,7 @@ function hammerIt(elm) {
 
     hammertime.on("pinchend", (ev) => {
         document.querySelector(".mapContainer").innerHTML += " "
+        document.querySelector(".hi").innerText = "PINCH ENDED"
     })
 }
 
