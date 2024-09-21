@@ -63,7 +63,11 @@ function hammerIt(elm) {
         if (ev.type == "pinch") {
             scale = Math.max(.999, Math.min(last_scale * (ev.scale), 4));
         }
-        if(ev.type == "pinchend"){last_scale = scale;}
+        if(ev.type == "pinchend"){
+            last_scale = scale
+            document.querySelector(".mapContainer").innerHTML += " "
+            document.querySelector(".hi").innerText = "PINCH ENDED"
+        }
 
         //panend
         if(ev.type == "panend"){
@@ -80,14 +84,6 @@ function hammerIt(elm) {
         if (transform) {
             el.style.webkitTransform = transform;
         }
-    })
-    hammertime.get("pinchend").set({
-        enable: true
-    })
-
-    hammertime.on("pinchend", (ev) => {
-        document.querySelector(".mapContainer").innerHTML += " "
-        document.querySelector(".hi").innerText = "PINCH ENDED"
     })
 }
 
