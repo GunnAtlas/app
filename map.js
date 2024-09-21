@@ -65,7 +65,12 @@ function hammerIt(elm) {
         }
         if(ev.type == "pinchend"){
             last_scale = scale
-            document.querySelector(".mapContainer").innerHTML += " "
+            let newSVG = document.createElement("img")
+            newSVG.src = "assets/images/map.svg"
+            newSVG.style.width = "1300vw"
+            newSVG.style.webkitTransform = el.style.webkitTransform
+            el.remove()
+            el = newSVG
             document.querySelector(".hi").innerText = "PINCH ENDED"
         }
 
