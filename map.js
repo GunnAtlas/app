@@ -71,6 +71,7 @@ function hammerIt(elm) {
             newSVG.style.webkitTransform = el.style.webkitTransform
             el.remove()
             el = newSVG
+            document.querySelector(".mapContainer").appendChild(el)
             document.querySelector(".hi").innerText = "PINCH ENDED"
         }
 
