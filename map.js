@@ -26,6 +26,7 @@ function hammerIt(elm) {
     hammertime.get('pinch').set({
         enable: true
     });
+    let enabled = true
     var posX = 0,
         posY = 0,
         scale = 1,
@@ -38,6 +39,7 @@ function hammerIt(elm) {
         el = elm;
 
     hammertime.on('doubletap pan pinch panend pinchend', function(ev) {
+        if (!enabled) {return}
         //pan    
         if (scale != 1) {
             posX = last_posX + ev.deltaX;
@@ -67,12 +69,14 @@ function hammerIt(elm) {
             last_scale = scale
             let newSVG = document.createElement("img")
             newSVG.src = "assets/images/map.svg"
-            newSVG.style.width = "1300vw"
             newSVG.style.webkitTransform = el.style.webkitTransform
+            newSVG.classList.add("map")
             el.remove()
-            el = newSVG
             document.querySelector(".mapContainer").appendChild(el)
             document.querySelector(".hi").innerText = "PINCH ENDED"
+            hammerIt(newSVG)
+            enabled = false
+            return
         }
 
         //panend
