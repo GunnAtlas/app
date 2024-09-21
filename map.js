@@ -67,16 +67,16 @@ function hammerIt(elm) {
         }
         if(ev.type == "pinchend"){
             last_scale = scale
-            let newSVG = document.createElement("img")
-            newSVG.src = "assets/images/map.svg"
-            newSVG.style.webkitTransform = el.style.webkitTransform
-            newSVG.classList.add("map")
-            el.remove()
-            document.querySelector(".mapContainer").appendChild(el)
-            document.querySelector(".hi").innerText = "PINCH ENDED"
-            hammerIt(newSVG)
-            enabled = false
-            return
+            // let newSVG = document.createElement("img")
+            // newSVG.src = "assets/images/map.svg"
+            // newSVG.style.webkitTransform = el.style.webkitTransform
+            // newSVG.classList.add("map")
+            // el.remove()
+            // document.querySelector(".mapContainer").appendChild(el)
+            // document.querySelector(".hi").innerText = "PINCH ENDED"
+            // hammerIt(newSVG)
+            // enabled = false
+            // return
         }
 
         //panend
