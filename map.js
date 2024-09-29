@@ -28,12 +28,20 @@ document.querySelector(".map").style = "top: " + midScreenHeight + "px; left: 0;
 
 function resize(svg, scale) {
     let svgWidth = parseInt(svg.getAttribute('width'));
-    svg.setAttribute('width', `${(svgWidth * scale)}px`);
+    svg.setAttribute('width', `${(-(oldSVG2 * 2) * scale)}px`);
     let svgHeight = parseInt(svg.getAttribute('height'));
-    svg.setAttribute('height', `${(svgHeight * scale)}px`);
-    svg.setAttribute("style", `position: absolute;top: ${(-(svgHeight * scale) / 2) - oldSVG + midScreenHeight}px; left: ${(-(svgWidth * scale) / 2) - oldSVG2}px;`)
+    svg.setAttribute('height', `${(-(oldSVG * 2) * scale)}px`);
+    svg.setAttribute("style", `top: ${(-(-(oldSVG * 2) * scale) / 2) - oldSVG + midScreenHeight}px; left: ${(-(-(oldSVG2 * 2) * scale) / 2) - oldSVG2}px; touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);`)
 }
-
+function test() {
+    let elm = document.querySelector(".map")
+    elm.setAttribute("style", elm.getAttribute("style") + "transform: translate3d(0, 0, 0) scale3d(2, 2, 1)")
+    setTimeout(() => {
+        resize(elm, 2)
+        elm.setAttribute("style", elm.getAttribute("style") + "transform: translate3d(0, 0, 0) scale3d(1, 1, 8)")
+        console.log("?")
+    }, 500)
+}
 function hammerIt(elm) {
     hammertime = new Hammer(elm, {});
     hammertime.get('pinch').set({
@@ -79,10 +87,11 @@ function hammerIt(elm) {
             scale = Math.max(.999, Math.min(last_scale * (ev.scale), 4));
         }
         if(ev.type == "pinchend"){
-            // transform =
-            //     "translate3d(" + posX + "px," + posY + "px, 0) " +
-            //     "scale3d(" + 1 + ", " + 1 + ", 8)";
-            // resize(elm, scale)
+            transform =
+                "translate3d(" + posX + "px," + posY + "px, 0) " +
+                "scale3d(" + 1 + ", " + 1 + ", 1)";
+            resize(elm, scale)
+            elm.setAttribute("style", elm.getAttribute("style") + transform)
             last_scale = scale
         }
 
@@ -94,12 +103,12 @@ function hammerIt(elm) {
 
         if (scale != 1) {
             transform =
-                "translate3d(" + posX + "px," + posY + "px, 0) "
-            resize(document.querySelector(".mapContainer"), scale)
+                "translate3d(" + posX + "px," + posY + "px, 0) " +
+                "scale3d(" + scale + ", " + scale + ", 1)";
         }
 
         if (transform) {
-            el.style.webkitTransform = transform;
+            elm.setAttribute("style", elm.getAttribute("style") + transform)
         }
     })
 }
