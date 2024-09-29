@@ -95,7 +95,7 @@ function hammerIt(elm) {
         if (scale != 1) {
             transform =
                 "translate3d(" + posX + "px," + posY + "px, 0) "
-            resize(elm, scale)
+            resize(document.querySelector(".mapContainer"), scale)
         }
 
         if (transform) {
