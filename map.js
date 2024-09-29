@@ -35,10 +35,11 @@ function resize(svg, scale) {
 }
 function test() {
     let elm = document.querySelector(".map")
-    elm.setAttribute("style", elm.getAttribute("style") + "transform: translate3d(0, 0, 0) scale3d(2, 2, 1)")
+    resize(elm, 1)
+    elm.style.webkitTransform = "translate3d(0, 0, 0) scale3d(2, 2, 8)"
     setTimeout(() => {
         resize(elm, 2)
-        elm.setAttribute("style", elm.getAttribute("style") + "transform: translate3d(0, 0, 0) scale3d(1, 1, 8)")
+        elm.style.webkitTransform = "translate3d(0, 0, 0) scale3d(1, 1, 8)"
         console.log("?")
     }, 500)
 }
@@ -87,18 +88,23 @@ function hammerIt(elm) {
             scale = Math.max(.999, Math.min(last_scale * (ev.scale), 4));
         }
         if(ev.type == "pinchend"){
+            last_scale = scale
+            resize(elm, scale)
             transform =
                 "translate3d(" + posX + "px," + posY + "px, 0) " +
-                "scale3d(" + 1 + ", " + 1 + ", 1)";
-            resize(elm, scale)
-            elm.setAttribute("style", elm.getAttribute("style") + transform)
-            last_scale = scale
+                "scale3d(1, 1, 8)";
+            elm.style.webkitTransform = transform
         }
 
         //panend
         if(ev.type == "panend"){
             last_posX = posX < max_pos_x ? posX : max_pos_x;
             last_posY = posY < max_pos_y ? posY : max_pos_y;
+            resize(elm, scale)
+            transform =
+                "translate3d(" + posX + "px," + posY + "px, 0) " +
+                "scale3d(1, 1, 8)";
+            elm.style.webkitTransform = transform
         }
 
         if (scale != 1) {
