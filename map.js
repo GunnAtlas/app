@@ -20,12 +20,18 @@
 //     fingersOnScreen--
 //     document.querySelector(".hi").innerText = fingersOnScreen
 // }
+const oldSVG = -(parseInt(document.querySelector(".map").getAttribute('height')) * 1) / 2
+const oldSVG2 = -(parseInt(document.querySelector(".map").getAttribute('width')) * 1) / 2
+const midScreenHeight = window.innerHeight / 4
+
+document.querySelector(".map").style = "top: " + midScreenHeight + "px; left: 0;"
 
 function resize(svg, scale) {
     let svgWidth = parseInt(svg.getAttribute('width'));
-    svg.setAttribute('width', `${(svgWidth * scale)}`);
+    svg.setAttribute('width', `${(svgWidth * scale)}px`);
     let svgHeight = parseInt(svg.getAttribute('height'));
-    svg.setAttribute('height', `${(svgHeight * scale)}`);
+    svg.setAttribute('height', `${(svgHeight * scale)}px`);
+    svg.setAttribute("style", `position: absolute;top: ${(-(svgHeight * scale) / 2) - oldSVG + midScreenHeight}px; left: ${(-(svgWidth * scale) / 2) - oldSVG2}px;`)
 }
 
 function hammerIt(elm) {
