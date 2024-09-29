@@ -21,6 +21,13 @@
 //     document.querySelector(".hi").innerText = fingersOnScreen
 // }
 
+function resize(svg, scale) {
+    let svgWidth = parseInt(svg.getAttribute('width'));
+    svg.setAttribute('width', `${(svgWidth * scale)}`);
+    let svgHeight = parseInt(svg.getAttribute('height'));
+    svg.setAttribute('height', `${(svgHeight * scale)}`);
+}
+
 function hammerIt(elm) {
     hammertime = new Hammer(elm, {});
     hammertime.get('pinch').set({
@@ -66,17 +73,11 @@ function hammerIt(elm) {
             scale = Math.max(.999, Math.min(last_scale * (ev.scale), 4));
         }
         if(ev.type == "pinchend"){
+            transform =
+                "translate3d(" + posX + "px," + posY + "px, 0) " +
+                "scale3d(" + 1 + ", " + 1 + ", 8)";
+            resize(elm, scale)
             last_scale = scale
-            // let newSVG = document.createElement("img")
-            // newSVG.src = "assets/images/map.svg"
-            // newSVG.style.webkitTransform = el.style.webkitTransform
-            // newSVG.classList.add("map")
-            // el.remove()
-            // document.querySelector(".mapContainer").appendChild(el)
-            // document.querySelector(".hi").innerText = "PINCH ENDED"
-            // hammerIt(newSVG)
-            // enabled = false
-            // return
         }
 
         //panend
