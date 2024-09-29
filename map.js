@@ -23,9 +23,9 @@
 
 function resize(svg, scale) {
     let svgWidth = parseInt(svg.getAttribute('width'));
-    svg.setAttribute('width', `${(svgWidth * scale)}px`);
+    svg.setAttribute('width', `${(svgWidth * scale)}`);
     let svgHeight = parseInt(svg.getAttribute('height'));
-    svg.setAttribute('height', `${(svgHeight * scale)}px`);
+    svg.setAttribute('height', `${(svgHeight * scale)}`);
 }
 
 function hammerIt(elm) {
@@ -73,6 +73,10 @@ function hammerIt(elm) {
             scale = Math.max(.999, Math.min(last_scale * (ev.scale), 4));
         }
         if(ev.type == "pinchend"){
+            transform =
+                "translate3d(" + posX + "px," + posY + "px, 0) " +
+                "scale3d(" + 1 + ", " + 1 + ", 8)";
+            resize(elm, scale)
             last_scale = scale
         }
 
@@ -84,9 +88,8 @@ function hammerIt(elm) {
 
         if (scale != 1) {
             transform =
-                "translate3d(" + posX + "px," + posY + "px, 0) "
-                
-            resize(elm, scale)
+                "translate3d(" + posX + "px," + posY + "px, 0) " +
+                "scale3d(" + scale + ", " + scale + ", 8)";
         }
 
         if (transform) {
