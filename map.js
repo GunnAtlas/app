@@ -104,11 +104,11 @@ function hammerIt(elm) {
         if (scale != 1) {
             transform =
                 "translate3d(" + posX + "px," + posY + "px, 0) " +
-                "scale3d(" + scale + ", " + scale + ", 1)";
+                "scale3d(" + scale + ", " + scale + ", 8)";
         }
 
         if (transform) {
-            elm.setAttribute("style", elm.getAttribute("style") + transform)
+            elm.style.webkitTransform = transform
         }
     })
 }
