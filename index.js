@@ -130,10 +130,12 @@ function openClubs() {
 
         document.querySelector(".clubMenu").style.opacity = 100
         document.querySelector(".clubMenuX").style.opacity = 100
+        document.querySelector(".daysButtons").style.opacity = 100
+        document.querySelector(".bottomBar").style.pointerEvents = "none"
+        document.querySelector(".clubMenu").style.pointerEvents = "auto"
         function revealClub() {
             setTimeout(function() {
                 allClubs[i].style.opacity = "100"
-                console.log(allClubs[i])
                 i++;
                 if (i < allClubs.length) {
                     revealClub();
@@ -151,6 +153,9 @@ document.querySelector(".clubMenuX").onclick = function() {
 
         document.querySelector(".clubMenuX").style.opacity = 0
         document.querySelector(".clubMenu").style.opacity = 0
+        document.querySelector(".daysButtons").style.opacity = 0
+        document.querySelector(".bottomBar").style.pointerEvents = "auto"
+        document.querySelector(".clubMenu").style.pointerEvents = "none"
         for (let i = 0; i < allClubs.length; i++) {
             allClubs[i].style.opacity = "0"
         }
