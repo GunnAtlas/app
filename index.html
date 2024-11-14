@@ -38,8 +38,8 @@
                 </div>
                 <div class="page clubs" style="left: 300vw;">
                     <p>
-                        Clubs:<br>
-                        None, you are too socially akward
+                        Your Clubs:<br>
+                        None, click <a href="javascript:openClubs()">here</a> to add some.
                     </p>
                 </div>
             </div>
@@ -53,12 +53,21 @@
                 <div class="keyMember">Clubs</div>
                 <div class="keyMember">Rooms</div>
             </div>
-            <div class="bottomBar">
+            <div class="bottomBar" style="padding-top: 0vh; pointer-events: auto;">
                 <img id="map" src="assets/icons/map.png" class="icon selected" />
                 <img id="friends" src="assets/icons/friends.png" class="icon" />
                 <img id="schedule" src="assets/icons/schedule.png" class="icon" />
                 <img id="clubs" src="assets/icons/clubCalendar.png" class="icon" />
             </div>
+            <div class="clubMenu" style="pointer-events: none; opacity: 0;">
+                <div class="club" style="opacity: 0;">
+
+                </div>
+                <div class="club" style="opacity: 0;">
+
+                </div>
+            </div>
+            <img class="clubMenuX" src="assets/images/X.png" style="opacity: 0;">
         </div>
         
         <div class="alert" hidden>

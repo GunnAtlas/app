@@ -116,3 +116,49 @@ if (checkMobile() || window.location.href == "http://127.0.0.1:5500/index.html")
 } else {
     document.body.innerHTML = "This application is not available on desktop yet."
 }
+
+function openClubs() {
+    let allIcons = document.querySelectorAll(".icon")
+
+    document.querySelector(".bottomBar").style.paddingTop = "87vh"
+    for (let i = 0; i < allIcons.length; i++) {
+        allIcons[i].style.opacity = "0"
+    }
+    setTimeout(function() {
+        let allClubs = document.querySelectorAll(".club")
+        let i = 0
+
+        document.querySelector(".clubMenu").style.opacity = 100
+        document.querySelector(".clubMenuX").style.opacity = 100
+        function revealClub() {
+            setTimeout(function() {
+                allClubs[i].style.opacity = "100"
+                console.log(allClubs[i])
+                i++;
+                if (i < allClubs.length) {
+                    revealClub();
+                }
+            }, 75)
+        }
+        revealClub()
+    }, 250)
+}
+
+document.querySelector(".clubMenuX").onclick = function() {
+    if (document.querySelector(".clubMenuX").style.opacity == 100) {
+        let allIcons = document.querySelectorAll(".icon")
+        let allClubs = document.querySelectorAll(".club")
+
+        document.querySelector(".clubMenuX").style.opacity = 0
+        document.querySelector(".clubMenu").style.opacity = 0
+        for (let i = 0; i < allClubs.length; i++) {
+            allClubs[i].style.opacity = "0"
+        }
+        setTimeout(function() {
+            document.querySelector(".bottomBar").style.paddingTop = "0"
+            for (let i = 0; i < allIcons.length; i++) {
+                allIcons[i].style.opacity = "100"
+            }
+        }, 250)
+    }
+}
