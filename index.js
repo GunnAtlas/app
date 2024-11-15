@@ -121,6 +121,7 @@ function openClubs() {
     let allIcons = document.querySelectorAll(".icon")
 
     document.querySelector(".bottomBar").style.paddingTop = "87vh"
+    document.querySelector(".bottomBar").style.borderRadius = "0"
     for (let i = 0; i < allIcons.length; i++) {
         allIcons[i].style.opacity = "0"
     }
@@ -161,6 +162,7 @@ document.querySelector(".clubMenuX").onclick = function() {
         }
         setTimeout(function() {
             document.querySelector(".bottomBar").style.paddingTop = "0"
+            document.querySelector(".bottomBar").style.borderRadius = "50px 50px 0 0"
             for (let i = 0; i < allIcons.length; i++) {
                 allIcons[i].style.opacity = "100"
             }
