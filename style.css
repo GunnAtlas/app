@@ -224,6 +224,7 @@ p {
     border-radius: 15px;
     transition: opacity 250ms;
     text-align: center;
+    overflow: hidden;
 }
 
 .daysButtons {
@@ -262,4 +263,12 @@ p {
     white-space: nowrap;
     margin-left: 2vw;
     margin-right: 2vw;
+}
+
+.clubContainer {
+    overflow: scroll;
+}
+
+.clubContainer::-webkit-scrollbar {
+    display: none;
 }
